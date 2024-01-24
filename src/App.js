@@ -1,22 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styled from "styled-components";
+
+const Container = styled.div`
+  max-width: 800px;
+  margin: 0 auto;
+`;
+
+const Heading = styled.h1`
+  color: #333;
+`;
+
+const SubHeading = styled.h2`
+  color: #014da0;
+`;
+
+// const SubHeading = styled.span`
+//   color: #014da0;
+//   display: inline;
+//   font-weight: bold;
+//   font-size: 12px;
+// `;
+
+const Paragraph = styled.p``;
 
 function App() {
   return (
-    <div>
-      <h1>Privacy Policy</h1>
+    <Container>
+      <Heading>Privacy Policy</Heading>
 
-      <p>
+      <Paragraph>
         The Kangen Connect team operates this mobile application and its server.
         This page informs you of our policies regarding the collection, use, and
         disclosure of personal data when you use our Service and the choices you
         have associated with that data. We collect several different types of
         information for various purposes to provide and improve our Service to
         you.
-      </p>
+      </Paragraph>
 
-      <h2>Types of Data Collected</h2>
-      <p>
+      <SubHeading>Types of Data Collected</SubHeading>
+      <Paragraph>
         <strong>Personal Data</strong>
         <br />
         While using our Service, we may ask you to provide us with certain
@@ -32,9 +54,9 @@ function App() {
           <li>Address, State, Province, ZIP/Postal code, City</li>
           <li>Cookies and Usage Data</li>
         </ul>
-      </p>
+      </Paragraph>
 
-      <p>
+      <Paragraph>
         <strong> Information Collection and Use</strong>
         <br />
         We may collect certain information about your device, including but not
@@ -60,9 +82,9 @@ function App() {
             collect information about your precise or approximate location.
           </li>
         </ul>
-      </p>
+      </Paragraph>
 
-      <p>
+      <Paragraph>
         <strong>Data Collected by Third Parties</strong>
         <br />
         The App may use third-party services that collect information used to
@@ -73,36 +95,37 @@ function App() {
             use OTP for verification of user’s registration.
           </li>
         </ul>
-      </p>
+      </Paragraph>
 
-      <h2>Cookies</h2>
-      <p>
+      <SubHeading>Cookies</SubHeading>
+      <Paragraph>
         Cookies are small files stored on your device that allow us to capture
         and remember certain information. The App may use cookies for
         authentication and analytics purposes.
-      </p>
+      </Paragraph>
 
-      <h2>Security</h2>
-      <p>
+      <SubHeading>Security</SubHeading>
+      <Paragraph>
         We prioritize the security of your personal information and use
         industry-standard measures to protect it. However, no method of
         transmission over the internet or electronic storage is 100% secure;
         therefore, we cannot guarantee its absolute security.
-      </p>
+      </Paragraph>
 
-      <h2>Changes to This Privacy Policy</h2>
-      <p>
+      <SubHeading>Changes to This Privacy Policy</SubHeading>
+      <Paragraph>
         We may update our Privacy Policy from time to time. You are advised to
         review this page periodically for any changes. We will notify you of any
         changes by posting the new Privacy Policy on this page.
-      </p>
-
-      <p>
+      </Paragraph>
+      <br />
+      <br />
+      <Paragraph>
         Thank You
         <br />
         @Team Kangen Connect
-      </p>
-    </div>
+      </Paragraph>
+    </Container>
   );
 }
 
