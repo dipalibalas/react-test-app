@@ -1,5 +1,6 @@
 {
   "name": "privacy-policy",
+  "homepage": "https://dipalibalas.github.io/react-test-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
